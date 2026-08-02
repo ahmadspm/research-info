@@ -354,3 +354,27 @@ background:#061b45;
 color:white;
 
 }
+.logo-grid {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+    flex-wrap:nowrap;
+
+}
+
+
+.logo-grid img {
+
+    height:55px;
+
+    width:auto;
+
+    object-fit:contain;
+
+}
