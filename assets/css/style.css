@@ -13,8 +13,6 @@ h2{color:#0f172a}
 footer{padding:40px 0;border-top:1px solid #ddd}
 /* Research Impact Metrics */
 
-/* Research Impact Metrics */
-
 .impact-banner {
 
     display: grid;
@@ -23,13 +21,13 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
     background: #061b45;
 
-    border-radius: 22px;
+    border-radius: 18px;
 
-    max-width: 900px;
+    max-width: 950px;
 
-    margin: 50px auto;
+    margin: 40px auto;
 
-    padding: 25px 20px;
+    padding: 18px 15px;
 
 }
 
@@ -40,7 +38,7 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
     text-align: center;
 
-    padding: 15px 20px;
+    padding: 12px 15px;
 
 }
 
@@ -68,9 +66,9 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
     color: white;
 
-    font-size: 28px;
+    font-size: 20px;
 
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 
 }
 
@@ -81,9 +79,9 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 36px;
+    font-size: 32px;
 
-    font-weight: 400;
+    font-weight: 600;
 
     line-height: 1;
 
@@ -92,7 +90,7 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
 .impact-number sup {
 
-    font-size: 22px;
+    font-size: 16px;
 
 }
 
@@ -101,10 +99,10 @@ footer{padding:40px 0;border-top:1px solid #ddd}
 
     color: white;
 
-    font-size: 13px;
+    font-size: 11px;
 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
-    margin-top: 14px;
+    margin-top: 10px;
 
 }
