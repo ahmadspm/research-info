@@ -106,3 +106,85 @@ footer{padding:40px 0;border-top:1px solid #ddd}
     margin-top: 10px;
 
 }
+/* Research Focus Cards */
+
+.research-cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+.research-card {
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    transition:0.3s;
+
+}
+
+
+.research-card h3 {
+
+    color:#061b45;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+.research-card p {
+
+    color:#475569;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+
+.research-card:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+@media(max-width:900px){
+
+.research-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.research-cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
