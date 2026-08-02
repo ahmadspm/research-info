@@ -1,0 +1,26 @@
+[
+  {
+    "year": "2026",
+    "title": "A Unified Framework for Human\u2013AI Collaboration in Security Operations Centres with Trusted Autonomy",
+    "area": "Artificial Intelligence | Human-AI Collaboration | Cybersecurity",
+    "venue": "ACM Transactions on Internet Technology",
+    "doi": "https://doi.org/10.1145/3837073",
+    "publisher": "https://dl.acm.org/"
+  },
+  {
+    "year": "2026",
+    "title": "BRIDG-ICS: AI-grounded knowledge graphs for intelligent threat analytics in Industry 5.0 cyber-physical systems",
+    "area": "Industry 5.0 | Knowledge Graphs | Cybersecurity",
+    "venue": "Cybersecurity (Springer Nature)",
+    "doi": "https://doi.org/10.1186/s42400-026-00597-0",
+    "publisher": "https://www.springer.com/"
+  },
+  {
+    "year": "2024",
+    "title": "Explainable AI for cybersecurity automation, intelligence and trustworthiness in digital twin",
+    "area": "Digital Twins | Explainable AI | Cybersecurity",
+    "venue": "ICT Express",
+    "doi": "https://doi.org/10.1016/j.icte.2024.05.007",
+    "publisher": "https://www.sciencedirect.com/"
+  }
+]
