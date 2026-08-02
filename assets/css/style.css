@@ -188,3 +188,99 @@ grid-template-columns:1fr;
 }
 
 }
+/* Featured Research Cards */
+
+
+.featured-research {
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+
+
+.research-publication-card {
+
+border:1px solid #e2e8f0;
+
+border-radius:16px;
+
+padding:25px;
+
+background:white;
+
+}
+
+
+
+.research-publication-card h3 {
+
+font-size:20px;
+
+color:#061b45;
+
+line-height:1.4;
+
+}
+
+
+
+.research-publication-card p {
+
+font-size:15px;
+
+line-height:1.7;
+
+color:#475569;
+
+}
+
+
+
+.research-publication-card .venue {
+
+font-weight:600;
+
+color:#2563eb;
+
+}
+
+
+
+.button {
+
+display:inline-block;
+
+margin-top:15px;
+
+background:#061b45;
+
+color:white;
+
+padding:8px 18px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-size:14px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.featured-research{
+
+grid-template-columns:1fr;
+
+}
+
+}
