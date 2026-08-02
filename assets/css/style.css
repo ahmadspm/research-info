@@ -284,3 +284,73 @@ grid-template-columns:1fr;
 }
 
 }
+
+.profile-column {
+
+text-align:center;
+
+}
+
+
+.profile-buttons {
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+
+.profile-buttons .button {
+
+padding:10px 24px;
+
+border-radius:25px;
+
+font-size:14px;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+
+.connect-button {
+
+background:#061b45;
+
+color:white;
+
+}
+
+
+.email-button {
+
+background:white;
+
+color:#061b45;
+
+border:1px solid #061b45;
+
+}
+
+
+.connect-button:hover {
+
+background:#123b78;
+
+}
+
+
+.email-button:hover {
+
+background:#061b45;
+
+color:white;
+
+}
