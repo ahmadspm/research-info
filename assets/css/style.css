@@ -59,7 +59,9 @@ p {
 
 }
 
-
+.banner-image {
+    background-image:url("../images/header-banner.png");
+}
 
 /* =========================
    NAVIGATION
