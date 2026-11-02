@@ -10,7 +10,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#top"><span class="brand-mark">CPS</span><span>Digital Twin Experimental Workbench</span></a>
-    <nav aria-label="Primary"><a href="#simulator">Simulator</a><a href="#models">Models</a><a href="#method">Method</a><a class="repo-link" href="https://github.com/ahmadspm/industrial-cps-security-datasets/tree/main/examples/digital_twins" target="_blank" rel="noreferrer">View source ↗</a></nav>
+    <nav aria-label="Primary"><a href="#simulator">Simulator</a><a href="#analytics">Analyses</a><a href="#models">Models</a><a href="#method">Method</a><a class="repo-link" href="https://github.com/ahmadspm/industrial-cps-security-datasets/tree/main/examples/digital_twins" target="_blank" rel="noreferrer">View source ↗</a></nav>
   </header>
 
   <main id="top">
@@ -60,6 +60,25 @@
         <div class="panel-title"><div><p class="eyebrow">Sequential conformance fixture</p><h3>Published policy cases</h3></div><span id="caseSummary" class="pass-badge">0 / 12 evaluated</span></div>
         <div class="table-wrap"><table><thead><tr><th>Case</th><th>Level</th><th>Inputs</th><th>Expected</th><th>Observed</th><th>Result</th></tr></thead><tbody id="caseRows"></tbody></table></div>
       </div>
+    </section>
+
+    <section id="analytics" class="section analytics">
+      <div class="section-heading"><div><p class="eyebrow">Experimental outputs</p><h2>Separate analytical views</h2></div><p>Each graph is calculated from the current browser simulation history. Run the plant or replay the 12-case fixture to populate the analyses.</p></div>
+      <div class="analytics-grid">
+        <article class="chart-card wide">
+          <div class="chart-card-head"><div><span>TS-01</span><h3>Tank-level time series</h3></div><p>Measured level and controller thresholds over experiment time.</p></div>
+          <div class="analysis-canvas time-series"><canvas id="timeSeriesChart" width="1000" height="360" aria-label="Tank level time-series graph"></canvas></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-card-head"><div><span>BAR-01</span><h3>Controller-state observations</h3></div><p>Count of recorded Off, Filling and Fault states.</p></div>
+          <div class="analysis-canvas"><canvas id="barChart" width="560" height="360" aria-label="Controller state bar graph"></canvas></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-card-head"><div><span>PIE-01</span><h3>Operating-state distribution</h3></div><p>Proportional distribution of recorded controller modes.</p></div>
+          <div class="analysis-canvas"><canvas id="pieChart" width="560" height="360" aria-label="Controller state pie chart"></canvas></div>
+        </article>
+      </div>
+      <div class="analysis-note"><strong>Interpretation:</strong> chart values describe browser-model samples, not measured testbed observations. Repeated samples approximate residence only when the simulation interval is held constant.</div>
     </section>
 
     <section id="models" class="section models">
