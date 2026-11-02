@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive browser demonstrator for the Industrial CPS Security Research Datasets digital-twin models.">
+  <title>Cyber-Physical Digital Twin Experimental Workbench</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">CPS</span><span>Digital Twin Experimental Workbench</span></a>
+    <nav aria-label="Primary"><a href="#simulator">Simulator</a><a href="#models">Models</a><a href="#method">Method</a><a class="repo-link" href="https://github.com/ahmadspm/industrial-cps-security-datasets/tree/main/examples/digital_twins" target="_blank" rel="noreferrer">View source ↗</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Experimental system · deterministic policy · local execution</p>
+        <h1>Cyber-physical digital twin<br><em>experimental workbench</em></h1>
+        <p class="lede">A reproducible environment for examining coupled tank dynamics, sampled control, observation integrity and fault-latch behaviour across Modelica, IEC 61131-3 Structured Text, SCXML and CSP_M.</p>
+        <div class="hero-actions"><a class="button primary" href="#simulator">Open simulator</a><button class="button ghost" id="runScenarioTop">Replay 12 research cases</button></div>
+      </div>
+      <div class="system-map" aria-label="Digital twin system architecture">
+        <div class="map-node sensor">01 <strong>Sensor</strong><span>level + freshness</span></div>
+        <div class="map-line"></div>
+        <div class="map-node twin">02 <strong>Digital twin</strong><span>state + policy</span></div>
+        <div class="map-line"></div>
+        <div class="map-node actuator">03 <strong>Pump</strong><span>physical response</span></div>
+        <div class="water-vessel"><div id="heroWater"></div><span id="heroLevel">0.50 m</span></div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Model summary">
+      <div><strong>DT-TANK-01</strong><span>reference experiment</span></div><div><strong>4</strong><span>native model views</span></div><div><strong>Δt = 0.1 s</strong><span>integration interval</span></div><div><strong>12</strong><span>sequential conformance cases</span></div>
+    </section>
+
+    <section id="simulator" class="lab section">
+      <div class="section-heading"><div><p class="eyebrow">Interactive laboratory</p><h2>Plant and controller simulation</h2></div><p>Change inputs, advance time or replay the published sequential fixture. The chart records measured level, pump command and controller state.</p></div>
+      <div class="lab-grid">
+        <aside class="control-panel instrument-panel">
+          <div class="panel-title"><div><span class="panel-code">CONFIG / DT-TANK-01</span><h3>Experimental parameters</h3></div><button class="icon-button" id="resetAll" title="Reset simulation">↻</button></div>
+          <label>Initial level <output id="initialOut">0.50 m</output><input id="initialLevel" type="range" min="0" max="1.1" step="0.01" value="0.50"></label>
+          <div class="two-col"><label>Inflow q<sub>in</sub><input id="inflow" type="number" step="0.01" value="0.05"></label><label>Outflow q<sub>out</sub><input id="outflow" type="number" step="0.01" value="0.02"></label></div>
+          <div class="thresholds"><label>Low<input id="low" type="number" step="0.01" value="0.30"></label><label>High<input id="high" type="number" step="0.01" value="0.70"></label><label>Trip<input id="trip" type="number" step="0.01" value="0.95"></label></div>
+          <fieldset><legend>Control inputs</legend><label class="switch-row"><span>Controller enabled</span><input id="enabled" type="checkbox" checked><i></i></label><label class="switch-row"><span>Fresh telemetry</span><input id="fresh" type="checkbox" checked><i></i></label><label class="switch-row"><span>Fault reset request</span><input id="reset" type="checkbox"><i></i></label></fieldset>
+          <div class="actions"><button class="button primary" id="toggleRun">Run simulation</button><button class="button ghost dark" id="stepOnce">Step +0.1 s</button></div>
+          <button class="button scenario" id="runScenario">Replay published 12-case fixture</button>
+        </aside>
+
+        <div class="monitor instrument-monitor">
+          <div class="monitor-header"><span>LIVE TELEMETRY / SIMULATION CLOCK</span><span class="system-ready"><i></i> MODEL READY</span></div>
+          <div class="status-strip"><div><span>Plant level</span><strong id="levelValue">0.50 m</strong></div><div><span>Controller state</span><strong id="modeValue" class="state-pill off">OFF</strong></div><div><span>Pump command</span><strong id="pumpValue">STOPPED</strong></div><div><span>Simulation time</span><strong id="timeValue">0.0 s</strong></div></div>
+          <div class="canvas-wrap"><canvas id="chart" width="1000" height="420" aria-label="Time series of tank level and thresholds"></canvas><div class="chart-legend"><span><i class="level-key"></i>Level</span><span><i class="low-key"></i>Low/high thresholds</span><span><i class="trip-key"></i>Safety trip</span></div></div>
+          <div class="decision"><div><span class="pulse"></span><div><small>Latest controller decision</small><strong id="decisionText">Initial safe state; pump is off.</strong></div></div><button id="downloadCsv" class="text-button">Export CSV ↓</button></div>
+        </div>
+      </div>
+
+      <div class="case-panel" id="casePanel" hidden>
+        <div class="panel-title"><div><p class="eyebrow">Sequential conformance fixture</p><h3>Published policy cases</h3></div><span id="caseSummary" class="pass-badge">0 / 12 evaluated</span></div>
+        <div class="table-wrap"><table><thead><tr><th>Case</th><th>Level</th><th>Inputs</th><th>Expected</th><th>Observed</th><th>Result</th></tr></thead><tbody id="caseRows"></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="models" class="section models">
+      <div class="section-heading"><div><p class="eyebrow">One policy, complementary views</p><h2>Native model perspectives</h2></div><p>The browser demonstrator is an executable interpretation of the shared fixture. The repository remains the authoritative source for native-tool analysis.</p></div>
+      <div class="model-grid">
+        <article><span class="model-index">01</span><h3>Modelica</h3><p>Continuous tank dynamics, sampled control and experiment configuration.</p><a href="https://github.com/ahmadspm/industrial-cps-security-datasets/tree/main/examples/digital_twins/tank_pump/modelica" target="_blank" rel="noreferrer">Inspect physical model ↗</a></article>
+        <article><span class="model-index">02</span><h3>Structured Text</h3><p>PLC scan-cycle controller and a discrete plant simulation function block.</p><a href="https://github.com/ahmadspm/industrial-cps-security-datasets/tree/main/examples/digital_twins/tank_pump/structured_text" target="_blank" rel="noreferrer">Inspect PLC model ↗</a></article>
+        <article><span class="model-index">03</span><h3>SCXML</h3><p>Event-driven behavioural states, transitions, guards and fault latching.</p><a href="https://github.com/ahmadspm/industrial-cps-security-datasets/blob/main/examples/digital_twins/tank_pump/scxml/controller.scxml" target="_blank" rel="noreferrer">Inspect state machine ↗</a></article>
+        <article><span class="model-index">04</span><h3>CSP_M</h3><p>Communicating controller, safety envelope and refinement assertions.</p><a href="https://github.com/ahmadspm/industrial-cps-security-datasets/blob/main/examples/digital_twins/tank_pump/csp/controller.csp" target="_blank" rel="noreferrer">Inspect formal model ↗</a></article>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div><p class="eyebrow">Interpretation boundary</p><h2>What this demo establishes</h2></div>
+      <div class="method-grid"><div><strong>Browser exploration</strong><p>Useful for teaching, rapid parameter exploration and inspecting the common sequential control policy.</p></div><div><strong>Not native execution</strong><p>It does not compile Modelica or Structured Text and does not replace FDR refinement checking or full SCXML conformance.</p></div><div><strong>Illustrative plant</strong><p>The plant is uncalibrated and is not a reconstruction of operational infrastructure. Results are not safety assurance.</p></div></div>
+    </section>
+  </main>
+  <footer><div><strong>Industrial CPS Security Research Datasets</strong><p>Research demonstrator by Dr Ahmad Mohsin.</p></div><div><a href="https://github.com/ahmadspm/industrial-cps-security-datasets" target="_blank" rel="noreferrer">Dataset repository ↗</a><a href="https://ahmadspm.github.io/research-info/" target="_blank" rel="noreferrer">Research profile ↗</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
