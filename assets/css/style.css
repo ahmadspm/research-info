@@ -524,21 +524,37 @@ p {
     object-position: center top;
 }
 
-.featured-thumb-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: .75rem 1rem .7rem;
-    background: linear-gradient(transparent, rgba(5, 24, 48, .97) 30%);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.25;
-}
-
 @media (max-width: 600px) {
     .featured-thumb { height: 165px; }
+}
+
+.collaboration-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-block: 2rem 2.5rem;
+    padding: 1.45rem 1.7rem;
+    border: 1px solid #b8d3ee;
+    border-left: 5px solid #2671b3;
+    border-radius: .7rem;
+    background: #eaf4ff;
+}
+.collaboration-cta h2 { margin: 0 0 .45rem; font-size: clamp(1.3rem, 2vw, 1.55rem); }
+.collaboration-cta p { max-width: 75ch; margin: 0; font-size: 1rem; line-height: 1.55; }
+.collaboration-cta .button {
+    flex: 0 0 auto;
+    border-radius: .4rem;
+    background: #103f73;
+    border: 1px solid #103f73;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.collaboration-cta .button:hover, .collaboration-cta .button:focus-visible { background: #07294f; color: #fff; }
+@media (max-width: 760px) {
+    .collaboration-cta { flex-direction: column; align-items: stretch; padding: 1.15rem; }
+    .collaboration-cta .button { align-self: flex-start; }
 }
 
 
