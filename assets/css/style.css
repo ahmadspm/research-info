@@ -754,6 +754,7 @@ footer {
 
 
 
+
 .research-cards {
 
     grid-template-columns:1fr;
@@ -785,4 +786,53 @@ footer {
 }
 
 
+}
+
+/* Shared reading and navigation patterns across the portfolio. */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-size: 16px; background: #f8fbff; }
+a { color: #164c86; text-underline-offset: .18em; }
+a:hover { color: #0a3563; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 3px solid #efb54a; outline-offset: 3px;
+}
+.skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: .65rem 1rem; background: #fff; color: #0b315b; border-radius: .35rem; }
+.skip-link:focus { top: .5rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.main-header nav { justify-content: flex-start; flex-wrap: wrap; gap: .35rem .65rem; padding-block: .8rem; }
+.main-header nav a { display: inline-flex; align-items: center; min-height: 2.7rem; padding: .4rem .7rem; border-radius: .4rem; font-size: .94rem; font-weight: 600; }
+.main-header nav a:hover, .main-header nav a:focus-visible { color: #fff; background: #25558a; }
+.main-header nav a[aria-current="page"] { color: #fff; background: #2563a5; box-shadow: inset 0 -3px #a9d5ff; }
+.container > h1, main.container > h1 { font-size: clamp(2.2rem, 4vw, 3.1rem); margin: 2.5rem 0 1rem; }
+main.container { padding-bottom: 4rem; }
+main.container > p, .research-header > p { max-width: 78ch; }
+h2 { font-size: clamp(1.5rem, 2.5vw, 1.9rem); line-height: 1.3; margin-block: 2.6rem .9rem; }
+h3 { line-height: 1.35; }
+p, li { overflow-wrap: break-word; }
+main.container > .item, .research-focus-card, main.container > section > article {
+    background: #fff; border: 1px solid #d7e2ed; border-radius: .7rem;
+    box-shadow: 0 3px 14px rgba(20, 47, 80, .045); padding: 1.4rem 1.6rem; margin-block: .9rem;
+}
+main.container > .item > :first-child, .research-focus-card > :first-child, main.container > section > article > :first-child { margin-top: 0; }
+main.container > .item > :last-child, .research-focus-card > :last-child, main.container > section > article > :last-child { margin-bottom: 0; }
+main.container > .item h2 { font-size: 1.35rem; }
+main.container > .item h3 { font-size: 1.27rem; }
+.research-card, .research-publication-card { box-shadow: 0 3px 14px rgba(20, 47, 80, .045); }
+.research-card p, .research-publication-card p { font-size: 1rem; }
+.button { font-weight: 650; line-height: 1.35; }
+main.container .button:not(.publication-side .button), .profile-buttons .button { border: 1px solid #164c86; }
+main.container > section[aria-labelledby] { scroll-margin-top: 1.5rem; }
+footer { line-height: 2; }
+.contact-form input, .contact-form textarea, .contact-form select { max-width: 100%; font-size: 1rem; }
+iframe { max-width: 100%; border: 0; }
+@media (max-width: 760px) {
+    .container { width: min(92%, 1150px); }
+    .main-header nav { flex-direction: row; justify-content: flex-start; gap: .2rem; }
+    .main-header nav a { font-size: .9rem; min-height: 2.55rem; padding: .35rem .52rem; }
+    .hero { gap: 1.5rem; padding-block: 2.5rem; }
+    .hero img { width: min(260px, 70vw); height: auto; aspect-ratio: 1; }
+    .profile-buttons { flex-wrap: wrap; }
+    .impact-label { font-size: .83rem; letter-spacing: .04em; }
+    main.container > .item, .research-focus-card, main.container > section > article { padding: 1.1rem; }
 }
