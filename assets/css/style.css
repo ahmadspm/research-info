@@ -507,6 +507,16 @@ p {
 
 }
 
+.featured-thumbnail {
+    display: block;
+    width: calc(100% + 50px);
+    height: auto;
+    aspect-ratio: 20 / 9;
+    object-fit: cover;
+    margin: -25px -25px 1.2rem;
+    border-radius: 16px 16px 0 0;
+}
+
 
 
 .research-publication-card h3 {
