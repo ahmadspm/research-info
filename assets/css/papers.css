@@ -1,0 +1,17 @@
+.paper-page { max-width: 960px; padding-block: 2.2rem 4rem; }
+.paper-back { margin: 0 0 1.2rem; font-weight: 650; }
+.paper-page article { background: #fff; border: 1px solid #d7e2ed; border-radius: .8rem; padding: clamp(1.25rem, 3vw, 2.5rem); box-shadow: 0 5px 20px rgba(20,47,80,.06); }
+.paper-type { color: #195385; font-weight: 700; font-size: .95rem; margin: 0 0 .7rem; }
+.paper-page h1 { font-size: clamp(1.85rem, 3.2vw, 2.65rem); margin: 0 0 1.1rem; overflow-wrap: anywhere; }
+.paper-summary { font-size: 1.13rem; color: #20364e; max-width: 75ch; }
+.paper-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.35rem 0 2rem; }
+.paper-source { display: inline-block; background: #103f73; border: 1px solid #103f73; color: #fff; border-radius: .4rem; padding: .56rem .9rem; text-decoration: none; font-weight: 650; }
+.paper-source:hover, .paper-source:focus-visible { background: #07294f; color: #fff; }
+.paper-page section { border-top: 1px solid #e1eaf2; padding-top: .15rem; margin-top: 1.6rem; }
+.paper-page section h2 { font-size: 1.3rem; margin: 1.1rem 0 .5rem; }
+.paper-tags { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; list-style: none; }
+.paper-tags li { background: #e9f2fd; border: 1px solid #c7dff7; color: #174875; border-radius: .35rem; padding: .34rem .6rem; font-weight: 600; font-size: .9rem; }
+.paper-page blockquote { margin: .8rem 0; padding: 1rem 1.2rem; border-left: 4px solid #377bc1; background: #f3f8fe; overflow-wrap: anywhere; }
+.paper-related { padding-left: 1.2rem; }
+.paper-related li { margin-bottom: .7rem; }
+.paper-note { font-size: .94rem; color: #4a5d73; margin-top: 1.8rem; }
