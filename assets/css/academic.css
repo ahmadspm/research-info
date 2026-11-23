@@ -1,0 +1,25 @@
+.academic-page { max-width: 1080px; padding-block: 1.25rem 4rem; }
+.academic-page p, .academic-page li { font-size: 1.0625rem; line-height: 1.72; }
+.academic-breadcrumb { font-size: .95rem; color: #526b84; margin-block: .5rem 1.5rem; }
+.academic-breadcrumb a, .academic-page a:not(.button) { color: #13568c; text-underline-offset: .2em; }
+.academic-intro { padding: clamp(1.4rem, 4vw, 3rem); border-radius: 20px; background: linear-gradient(140deg, #eaf4fc, #f8fbfe); border: 1px solid #d4e5f2; }
+.academic-intro h1 { margin: .2rem 0 1rem; font-size: clamp(2.3rem, 5vw, 3.4rem); }
+.academic-lede { font-size: clamp(1.1rem, 2vw, 1.3rem) !important; max-width: 75ch; }
+.academic-actions { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.academic-page section:not(.academic-intro) { margin-top: 2.5rem; }
+.academic-page h2 { margin: 0 0 1rem; font-size: clamp(1.55rem, 3vw, 2rem); }
+.academic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 275px), 1fr)); gap: 1rem; }
+.academic-card { padding: 1.4rem; border: 1px solid #dce7f1; border-radius: 14px; background: #fff; box-shadow: 0 4px 18px rgba(21, 58, 92, .04); }
+.academic-card h3 { font-size: 1.28rem; margin: 0 0 .45rem; }
+.academic-card p { margin: .5rem 0; }
+.academic-unit-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: .75rem 1rem; padding: 0; list-style: none; }
+.academic-unit-list li { padding: 1rem 1.15rem; border-left: 3px solid #2b6da6; background: #f5f9fe; border-radius: 0 10px 10px 0; }
+.academic-unit-list strong, .academic-unit-list span { display: block; }
+.academic-unit-list span { color: #475569; margin-top: .25rem; }
+.academic-steps { padding-left: 1.4rem; max-width: 850px; }
+.academic-steps li { margin-bottom: .75rem; padding-left: .3rem; }
+.academic-callout { background: #eaf4fc; border: 1px solid #d4e5f2; border-radius: 16px; padding: clamp(1.2rem, 3vw, 2rem); }
+.academic-secondary { margin-bottom: 0; }
+.main-header nav { flex-wrap: wrap; gap: .55rem 1.25rem; }
+.main-header nav a[aria-current="page"] { border-bottom: 2px solid white; padding-bottom: .15rem; }
+@media (max-width: 760px) { .academic-page { padding-bottom: 2.5rem; } .academic-actions { align-items: flex-start; flex-direction: column; } }

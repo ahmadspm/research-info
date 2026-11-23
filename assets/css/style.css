@@ -901,3 +901,7 @@ iframe { max-width: 100%; border: 0; }
 .contact-options { background: #f5f9fe; border: 1px solid #dbe7f3; border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
 .contact-options h2 { margin-top: .3rem; }
 @media (max-width: 600px) { .discovery-section { margin-block: 1.7rem; } .discovery-card { padding: 1rem; } }
+
+/* Keep the full academic and research navigation usable on desktop and mobile. */
+.main-header nav { flex-wrap: wrap; gap: .55rem 1.25rem; }
+.main-header nav a[aria-current="page"] { border-bottom: 2px solid currentColor; padding-bottom: .15rem; }
