@@ -15,3 +15,6 @@
 .paper-related { padding-left: 1.2rem; }
 .paper-related li { margin-bottom: .7rem; }
 .paper-note { font-size: .94rem; color: #4a5d73; margin-top: 1.8rem; }
+
+.paper-authors { font-size: 1.02rem; color: #28435d; margin: -.3rem 0 1.2rem; font-weight: 550; }
+.paper-actions .paper-preprint { background: #fff; color: #103f73; }
