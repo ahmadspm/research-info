@@ -45,3 +45,6 @@
 .academic-project-list h5 { color: #0f172a; font-size: 1.12rem; line-height: 1.4; margin: 0 0 .25rem; }
 .academic-project-list p { margin: .2rem 0; }
 .academic-project-researcher { color: #13568c; font-weight: 700; }
+
+.academic-leadership-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 720px) { .academic-leadership-grid { grid-template-columns: 1fr; } }
