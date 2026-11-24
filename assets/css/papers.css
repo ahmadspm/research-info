@@ -18,3 +18,12 @@
 
 .paper-authors { font-size: 1.02rem; color: #28435d; margin: -.3rem 0 1.2rem; font-weight: 550; }
 .paper-actions .paper-preprint { background: #fff; color: #103f73; }
+.paper-page { padding-top: 1.6rem; }
+.paper-page article { box-shadow: 0 2px 12px rgba(20,47,80,.035); }
+.paper-page section { margin-top: 1.25rem; }
+.paper-page section h2 { margin-top: .9rem; }
+.paper-page blockquote { border-left-width: 3px; background: #f5f9fe; }
+.paper-detail { max-width: 900px; margin-block: 2rem 4rem; padding: clamp(1.3rem, 3vw, 2.4rem); background: #fff; border: 1px solid #d7e2ed; border-radius: .8rem; box-shadow: 0 2px 12px rgba(20,47,80,.035); }
+.paper-detail > h1 { margin-top: .3rem; }
+.paper-detail > h2 { font-size: 1.3rem; margin-top: 1.8rem; }
+.paper-detail > p { max-width: 77ch; }
