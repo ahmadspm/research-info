@@ -979,3 +979,27 @@ iframe { max-width: 100%; border: 0; }
   .home-actions { align-items: stretch; }
   .home-actions .button { text-align: center; }
 }
+
+/* Consistent portfolio navigation and reading rhythm. */
+.main-header { box-shadow: 0 2px 10px rgba(12, 37, 71, .08); }
+.main-header nav { gap: .2rem .5rem; padding-block: .65rem; }
+.main-header nav a { min-height: 2.5rem; padding: .38rem .7rem; border-radius: .4rem; font-size: .92rem; transition: background-color .15s ease; }
+.main-header nav a[aria-current="page"] { padding-bottom: .38rem; border-bottom: 0; box-shadow: inset 0 -2px #a9d5ff; }
+main.container, .research-header { padding-top: 1.6rem; }
+main.container > h1, .research-header h1 { line-height: 1.15; letter-spacing: -.02em; }
+main.container > p, .research-header > p { line-height: 1.65; }
+.research-card, .discovery-card, .research-focus-card, main.container > .item { border-color: #dbe5ee; border-radius: .75rem; box-shadow: 0 2px 12px rgba(20,47,80,.035); }
+.research-card:hover { transform: none; box-shadow: 0 3px 14px rgba(20,47,80,.055); }
+.research-card h3 { margin-top: 0; font-size: 1.2rem; }
+.research-card p { font-size: 1rem; }
+.button { border-radius: .45rem; font-size: .96rem; padding: .65rem 1rem; font-weight: 650; }
+.collaboration-cta { border-left-width: 1px; background: #edf5fc; }
+.collaboration-cta h2 { margin-top: 0; }
+footer.container { padding-block: 1.8rem; border-top: 1px solid #dbe5ee; color: #52657a; font-size: .92rem; }
+footer.container a { margin-inline: .2rem; }
+@media (max-width: 760px) {
+  .main-header nav { flex-direction: row; gap: .12rem .32rem; }
+  .main-header nav a { min-height: 2.4rem; padding: .3rem .5rem; font-size: .87rem; }
+  .main-header nav a[aria-current="page"] { padding-bottom: .3rem; }
+  .research-cards { gap: 1rem; }
+}
