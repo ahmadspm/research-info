@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ahmadspm.github.io/research-info/</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/research.html</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/publications.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://ahmadspm.github.io/research-info/grants.html</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/engagement.html</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/innovation.html</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/about.html</loc></url>
-  <url><loc>https://ahmadspm.github.io/research-info/contact.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/research.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/publications.html</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/grants.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/engagement.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/innovation.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/about.html</loc></url>
+  <url><loc>https://ahmadspm.github.io/research-info/pages/contact.html</loc></url>
   <url><loc>https://ahmadspm.github.io/research-info/papers/human-ai-collaboration-security-operations-centers.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ahmadspm.github.io/research-info/papers/bridg-ics-knowledge-graphs-threat-analytics.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ahmadspm.github.io/research-info/papers/neurograph-an-ai-graph-driven-neuro-symbolic-framework-for-explainable-threat-reasoning.html</loc><lastmod>2026-11-24</lastmod></url>
@@ -42,4 +42,4 @@
   <url><loc>https://ahmadspm.github.io/research-info/papers/rule-based-multi-criteria-framework-for-saas-application-architecture-selection.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ahmadspm.github.io/research-info/papers/thread-models-semantics-solaris-and-linux-m-n-to-1-1-thread-model.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ahmadspm.github.io/research-info/papers/an-integrated-approach-for-developing-semantic-mismatch-free-commercial-off-the-shelf-co.html</loc><lastmod>2026-11-24</lastmod></url>
-<url><loc>https://ahmadspm.github.io/research-info/teaching.html</loc><lastmod>2026-11-24</lastmod></url></urlset>
+<url><loc>https://ahmadspm.github.io/research-info/pages/teaching.html</loc><lastmod>2026-11-24</lastmod></url></urlset>
