@@ -2,19 +2,6 @@
   margin-block: 2.5rem;
 }
 
-.funding-summary {
-  max-width: 78ch;
-  padding: 1rem 1.25rem;
-  border-left: 4px solid #2563a5;
-  border-radius: .4rem;
-  background: #edf5fc;
-  line-height: 1.6;
-}
-
-.funding-summary strong {
-  color: #173f68;
-}
-
 .grant-section > h2 {
   margin-bottom: .5rem;
 }
