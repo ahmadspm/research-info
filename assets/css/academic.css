@@ -23,3 +23,15 @@
 .main-header nav { flex-wrap: wrap; gap: .55rem 1.25rem; }
 .main-header nav a[aria-current="page"] { border-bottom: 2px solid white; padding-bottom: .15rem; }
 @media (max-width: 760px) { .academic-page { padding-bottom: 2.5rem; } .academic-actions { align-items: flex-start; flex-direction: column; } }
+
+/* Combined academic page: compact section navigation and clear blue headings. */
+.academic-jump { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+.academic-jump a { display: inline-block; padding: .6rem 1rem; border: 1px solid #bad4eb; border-radius: 999px; background: #fff; font-weight: 700; }
+.academic-domain { scroll-margin-top: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #dbe7f3; }
+.academic-domain > .academic-section-heading { background: #0f3b73; color: #fff; padding: .85rem 1.25rem; border-radius: 12px; margin: 0 0 1rem; }
+.academic-domain-lede { max-width: 80ch; }
+.academic-domain > section { scroll-margin-top: 1rem; }
+.academic-domain > section > h3 { background: #e5f1fb; color: #0f3b73; padding: .7rem 1rem; border-left: 4px solid #2b6da6; border-radius: 0 9px 9px 0; font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
+.academic-card h4 { font-size: 1.25rem; margin: 0 0 .45rem; color: #0f172a; }
+.academic-domain .academic-callout h3 { background: #0f3b73; color: #fff; border: 0; border-radius: 9px; }
+@media (max-width: 600px) { .academic-domain > .academic-section-heading { padding: .75rem 1rem; } .academic-jump a { width: 100%; box-sizing: border-box; } }
